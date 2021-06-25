@@ -1,0 +1,152 @@
+
+//GLOBAL COLORS
+
+$background        : #FFFF;
+$color-primary     : #363C4A;
+$danger-color      : #F92E2E;
+$success-color     : #2AC35D;
+$gray-card         : #F5F5F5;
+
+//CUSTOM COLORS
+
+$tabs-border       : #00AEEF; 
+$icon-block        : #00AEEF; 
+
+/** GLOBAL ELEMENTS **/
+
+h1{
+    color          : $color-primary;
+    font-weight    : 800;
+}
+
+/** CUSTOM ELEMENTS **/
+
+.container{
+    margin         : 2rem auto;
+    width          : 80%;
+}
+
+.mat-card{
+    background: $gray-card;
+}
+
+.search{
+    padding-bottom : 0rem ;
+}
+
+.panel{
+    background     : $gray-card;
+    margin         : 2rem ;
+    padding        : .4rem ;
+    width          : 100% ;
+}
+
+.sub-panel{
+    box-shadow     : none ;  
+    transition     : none ;
+}
+
+.unsubscriber-panel{
+    border-radius  : 0px 0px 0px;
+    box-shadow     : -20px 0px 0 $danger-color;
+    display        : grid;
+    margin-right   : auto;
+    margin-left    : auto;
+    width          : 100%;
+}
+
+.danger-panel{
+    border-radius  : .2rem ;
+    box-shadow     : -20px 0px 0 $danger-color ;
+    display        : grid ;
+    margin-right   : auto ;
+    margin-left    : auto ;
+    width          : 100% ;
+}
+
+.success-panel{
+    border-radius  : .2rem ;
+    box-shadow     : -20px 0px 0 $success-color;
+    display        : grid ;
+    margin-right   : auto ;
+    margin-left    : auto ;
+    width          : 100% ;
+}
+
+.data{
+    background     : $gray-card;
+    padding        : 0px ;
+    margin         : 0px ;
+}
+
+.title-panel{
+    font-weight    : bolder;
+}
+
+.status{
+    line-height    : .1rem;
+}
+
+.stepper{
+    position       : relative;
+    right          : 0px;
+    padding        : 2px 10px 10px ;
+    top            : 20px;
+    width          : 100%;
+}
+
+.subscriber{
+    background     : $background;
+    box-shadow     : none ;
+    display        : inline-block;
+}
+
+.icon{
+    bottom         : 1.5rem;
+    color          : $success-color;
+    position       : relative;
+}
+
+.icon2{
+    bottom         : 1.5rem;
+    color          : $icon-block;
+    position       : relative;
+}
+
+.unsubscriber-panel{
+    margin         : 2rem;
+    width          : 100%;
+}
+
+/** SEARCH **/
+
+.input-search{
+    background     : #3F4BC2;
+    color          : #FFF ;
+    border-radius  : 40px ;  
+    position       : relative; 
+    left           : 600px;
+    width          : 40%; 
+   
+}
+
+.form-group{
+    max-width      : 100%;
+    position       : relative;
+    left           : .10rem;
+}
+
+.icon-search{
+    position       : relative; 
+    color          :#fff;
+    left           : 540px; 
+}
+
+/** PSEUDO **/
+
+::placeholder{
+    color          : #FFF ;
+    bottom         : .1rem;
+    left           : .9rem;
+    position       : relative;
+}
