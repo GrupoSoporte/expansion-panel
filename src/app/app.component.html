@@ -9,14 +9,12 @@
   <!--SEARCH-->
 
   <div class="form-group">
-   
-      <mat-form-field appearance="none"
-      class="input-search">
-      <input matInput placeholder="Buscar documento por rut, id o fecha" 
-      [(ngModel)]="busqueda" />
-      </mat-form-field>
-      <mat-icon class="icon-search">search</mat-icon>
- 
+    <mat-form-field appearance="none"
+    class="input-search">
+    <input matInput placeholder="Buscar documento por rut, id o fecha" 
+    [(ngModel)]="busqueda" />
+    </mat-form-field>
+    <mat-icon class="icon-search">search</mat-icon>
   </div>
 
   <br>
@@ -28,7 +26,7 @@
 
     <mat-tab label="ABONADO">
 
-      <mat-expansion-panel class="panel success-panel unsubscriber-panel">
+      <mat-expansion-panel class="panel success-panel">
       
         <mat-expansion-panel-header>
           
@@ -68,58 +66,69 @@
 
         <!-- STEPPER CARD -->
 
-        
+        <mat-card class="card-stepper">
+          <div class="stepper">
 
-      </mat-expansion-panel>
+            <mat-icon class="icon">check_circle</mat-icon>
       
-  </mat-tab>
-    
-    <!-- ************* -->
-    <!-- TAB 2 ANULADO -->
+            <mat-card class="subscriber">
+              <div class="status"> 
+                <h1>Aprobado</h1>  <span> 20/02/2021 12:30pm </span>
+              </div>
+            </mat-card>
 
-    <mat-tab label="ANULADO">
-
-        <mat-expansion-panel class="panel unsubscriber-panel">
-        
-          <mat-expansion-panel-header>
             
+          </div>
+        </mat-card>
+      </mat-expansion-panel>
+  </mat-tab>
+  
+  <!-- ************* -->
+  <!-- TAB 2 ANULADO -->
+
+  <mat-tab label="ANULADO">
+
+    <mat-expansion-panel class="panel unsubscriber-panel">
+        
+      <mat-expansion-panel-header>
+          
+          <mat-panel-title>
+            <span class="title-panel">Nombre de Cliente </span> 
+            : Eloy Corredores De Bolsa De Productos S.A.
+          </mat-panel-title>
+          <mat-panel-title>
+            <span class="title-panel">RUT</span>
+            : 13.258.639-K
+          </mat-panel-title>
+          <mat-panel-title >
+            <span class="title-panel">Monto</span>
+            : $60.000.000.002
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+  
+        <mat-expansion-panel class="sub-panel" hideToggle>
+        
+          <mat-expansion-panel-header class="data">
             <mat-panel-title>
-              <span class="title-panel">Nombre de Cliente </span> 
-              : Eloy Corredores De Bolsa De Productos S.A.
+              <span class="title-panel">id. transacción </span> : BCAMOVIL012020072807028993410
             </mat-panel-title>
             <mat-panel-title>
-              <span class="title-panel">RUT</span>
-              : 13.258.639-K
+              <span class="title-panel">Fecha y Hora</span> : 12/03/2021  12:24
             </mat-panel-title>
-            <mat-panel-title >
-              <span class="title-panel">Monto</span>
-              : $60.000.000.002
+            <mat-panel-title>
+              <span class="title-panel">Banco de Origen</span>: Santander
             </mat-panel-title>
             
           </mat-expansion-panel-header>
-    
-          <mat-expansion-panel class="sub-panel" hideToggle>
           
-            <mat-expansion-panel-header class="data">
-              <mat-panel-title>
-                <span class="title-panel">id. transacción </span> : BCAMOVIL012020072807028993410
-              </mat-panel-title>
-              <mat-panel-title>
-                <span class="title-panel">Fecha y Hora</span> : 12/03/2021  12:24
-              </mat-panel-title>
-              <mat-panel-title>
-                <span class="title-panel">Banco de Origen</span>: Santander
-              </mat-panel-title>
-              
-            </mat-expansion-panel-header>
-            
-          </mat-expansion-panel>
+        </mat-expansion-panel>
     
-          <br>
+        <br>
 
-         <!-- STEPPER CARD -->
+        <!-- STEPPER CARD -->
 
-        <mat-card style="background-color: #FFF;">
+        <mat-card class="card-stepper">
           <div class="stepper">
 
             <mat-icon class="icon">check_circle</mat-icon>
@@ -140,7 +149,6 @@
   
           </div>
         </mat-card>
-
 
         </mat-expansion-panel>
 
